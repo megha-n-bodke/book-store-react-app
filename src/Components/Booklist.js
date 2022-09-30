@@ -1,4 +1,5 @@
 import React from 'react';
+import AddBookForm from './AddBookForm';
 import Books from './Books';
 
 const Booklist = () => (
@@ -10,6 +11,7 @@ const Booklist = () => (
       title="Capital In Twenty-First Century"
       author="Suzanne Collins"
     />
+    <AddBookForm />
   </div>
 );
 

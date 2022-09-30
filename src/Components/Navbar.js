@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => (
   <div>
@@ -13,8 +13,8 @@ const Navbar = () => (
       </li>
     </ul>
  */}
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <h2 className="navbar-brand">BookStore CMS</h2>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light ps-5">
+      <h1 className="navbar-brand text-primary logo fw-bold">Bookstore CMS</h1>
       <button
         className="navbar-toggler"
         type="button"
@@ -29,11 +29,18 @@ const Navbar = () => (
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
-          <li className="nav-item active">
-            <Link to="/">Books</Link>
+          <li className="nav-item active ps-4">
+            <Link to="/" className="text-decoration-none text-dark">
+              Books
+            </Link>
           </li>
-          <li className="nav-item">
-            <Link to="Categories">Categories</Link>
+          <li className="nav-item ps-4">
+            <Link
+              to="Categories"
+              className="text-decoration-none text-secondary"
+            >
+              Categories
+            </Link>
           </li>
         </ul>
       </div>
