@@ -31,7 +31,7 @@ const Navbar = () => (
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active ps-4">
             <Link to="/" className="text-decoration-none text-dark">
-              Books
+              BOOKS
             </Link>
           </li>
           <li className="nav-item ps-4">
@@ -39,7 +39,7 @@ const Navbar = () => (
               to="Categories"
               className="text-decoration-none text-secondary"
             >
-              Categories
+              CATEGORIES
             </Link>
           </li>
         </ul>
