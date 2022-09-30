@@ -41,10 +41,6 @@ $ git clone {repository URL}
 
 - npm start
 
-### Usage
-
-Use for simple calculations
-
 ## Authors
 
 👤 **Megha Bodke**
