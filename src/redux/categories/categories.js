@@ -1,5 +1,5 @@
 const categories = [];
-const CHECK_STATUS = 'CHECK_STATUS';
+const CHECK_STATUS = 'components/categories/categories / CHECK_STATUS';
 
 export const checkStatus = () => ({
   type: 'CHECK_STATUS',
