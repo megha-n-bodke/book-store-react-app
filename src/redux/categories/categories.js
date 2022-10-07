@@ -1,5 +1,5 @@
 const categories = [];
-const CHECK_STATUS = 'categories/categories / CHECK_STATUS';
+const CHECK_STATUS = 'categories/categories/CHECK_STATUS';
 
 export const checkStatus = () => (dispatch) => {
   dispatch({
