@@ -1,11 +1,12 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import { addBook } from "../redux/books/books";
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { v4 as uuid } from 'uuid';
+import { addBook } from '../redux/books/books';
 
 const AddBookForm = () => {
   const [data, setData] = useState({
-    title: "",
-    author: "",
+    title: '',
+    author: '',
   });
 
   const dispatch = useDispatch();
@@ -18,7 +19,11 @@ const AddBookForm = () => {
   };
   const clickHandler = (e) => {
     e.preventDefault();
-    dispatch(addBook(data));
+    const newData = {
+      id: uuid(),
+      ...data,
+    };
+    dispatch(addBook(newData));
   };
   return (
     <div>
