@@ -1,7 +1,15 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/books';
 
 const Books = (props) => {
-  const { type, title, author } = props;
+  const {
+    type, title, author, id,
+  } = props;
+  const dispatch = useDispatch();
+  const clickHandler = () => {
+    dispatch(removeBook(id));
+  };
 
   return (
     <div className="d-flex flex-column align-items-center">
@@ -10,7 +18,11 @@ const Books = (props) => {
         <p>{title}</p>
         <p>{author}</p>
 
-        <button type="button" className="btn btn-primary">
+        <button
+          type="button"
+          className="btn btn-primary"
+          onClick={clickHandler}
+        >
           Remove
         </button>
       </div>
