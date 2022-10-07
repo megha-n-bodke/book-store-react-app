@@ -1,18 +1,24 @@
-import React from 'react';
-import AddBookForm from './AddBookForm';
-import Books from './Books';
+import React from "react";
+import { useSelector } from "react-redux";
+import AddBookForm from "./AddBookForm";
+import Books from "./Books";
 
-const Booklist = () => (
-  <div>
-    <Books type="Action" title="The Hunger Game" author="Suzanne Collins" />
-    <Books type="Science Fiction" title="Dune" author="Frank Herbert" />
-    <Books
-      type="Economy"
-      title="Capital In Twenty-First Century"
-      author="Suzanne Collins"
-    />
-    <AddBookForm />
-  </div>
-);
+const Booklist = () => {
+  const books = useSelector((state) => state.book);
+  console.log(books);
+  return (
+    <div>
+      {books.map((book) => (
+        <Books
+          key={Math.random()}
+          type="Action"
+          title={book.title}
+          author={book.author}
+        />
+      ))}
+      <AddBookForm />
+    </div>
+  );
+};
 
 export default Booklist;
