@@ -7,6 +7,7 @@ const AddBookForm = () => {
   const [data, setData] = useState({
     title: '',
     author: '',
+    category: 'Action',
   });
 
   const dispatch = useDispatch();
@@ -20,7 +21,7 @@ const AddBookForm = () => {
   const clickHandler = (e) => {
     e.preventDefault();
     const newData = {
-      id: uuid(),
+      item_id: uuid(),
       ...data,
     };
     dispatch(addBook(newData));
