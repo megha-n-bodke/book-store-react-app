@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { checkStatus } from '../redux/categories/categories';
+import './categories.css';
 
 const Categories = () => {
   const categories = useSelector((state) => state.category);
@@ -10,18 +11,19 @@ const Categories = () => {
   };
   return (
     <>
-      <div>
+      <div className="category-data">
         <button
           type="submit"
-          className="btn btn-primary ms-5 my-5"
+          className="btn btn-primary"
           onClick={clickHandler}
         >
           Check Status
         </button>
+
+        {categories.map((category) => (
+          <p key={Math.random()}>{category}</p>
+        ))}
       </div>
-      {categories.map((category) => (
-        <p key={Math.random()}>{category}</p>
-      ))}
     </>
   );
 };
