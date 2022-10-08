@@ -1,10 +1,12 @@
-import React from "react";
-import { useDispatch } from "react-redux";
-import { removeBook } from "../redux/books/books";
-import "./book.css";
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/books';
+import './book.css';
 
 const Books = (props) => {
-  const { type, title, author, id } = props;
+  const {
+    type, title, author, id,
+  } = props;
   const dispatch = useDispatch();
   const clickHandler = () => {
     dispatch(removeBook(id));
@@ -21,11 +23,11 @@ const Books = (props) => {
             <span type="button" className="Remove">
               Comments
             </span>
-            <div class="Line-2"></div>
+            <div className="Line-2" />
             <span type="button" onClick={clickHandler} className="Remove">
               Remove
             </span>
-            <div class="Line-2"></div>
+            <div className="Line-2" />
             <span type="button" className="Remove">
               Edit
             </span>
