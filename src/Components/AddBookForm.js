@@ -52,7 +52,7 @@ const AddBookForm = () => {
               className="form-author"
             />
           </div>
-          <button type="submit" className="btn btn-primary add-book">
+          <button type="submit" className="book-btn add-book">
             Add Book
           </button>
         </div>

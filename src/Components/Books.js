@@ -54,7 +54,7 @@ const Books = (props) => {
         <div className="progress-section ">
           <p className="chapter-head">CURRENT CHAPTER</p>
           <p className="chapter-num common-styles">CHAPTER 17</p>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="book-btn">
             Update Progress
           </button>
         </div>
