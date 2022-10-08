@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { v4 as uuid } from 'uuid';
-import { addBook } from '../redux/books/books';
-import './book.css';
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { v4 as uuid } from "uuid";
+import { addBook } from "../redux/books/books";
+import "./book.css";
 
 const AddBookForm = () => {
   const [data, setData] = useState({
-    title: '',
-    author: '',
-    category: 'Action',
+    title: "",
+    author: "",
+    category: "Action",
   });
 
   const dispatch = useDispatch();
@@ -33,7 +33,7 @@ const AddBookForm = () => {
         <h2>
           <span className="form-heading">ADD NEW BOOK</span>
         </h2>
-        <div className="form-group d-flex d-flex-row  justify-content-center align-content-between">
+        <div className="form-group d-flex d-flex-row  justify-content-center">
           <input
             className="book-title"
             type="text"

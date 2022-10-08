@@ -11,9 +11,6 @@
 .book-heading {
   height: 2.313rem;
   margin: 0.375rem 2.938rem 0.125rem 0;
-
-  /*   font-family: Montserrat;
- */
   font-size: 1.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -32,29 +29,18 @@
 }
 
 .books-link {
-  align-items: center;
-
-  /*   font-family: Montserrat;
- */
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.9px;
   color: #121212;
-  text-decoration: none;
 }
 
 .categories-link {
+  color: lightgray;
+}
+.common-styles {
   align-items: center;
-
-  /*   font-family: Montserrat;
- */
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: 1.9px;
-  color: lightgray;
   text-decoration: none;
 }

@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Navbar.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => (
   <div>
@@ -9,12 +9,12 @@ const Navbar = () => (
 
       <ul className="nav-items">
         <li>
-          <Link to="/" className="books-link">
+          <Link to="/" className="books-link common-styles">
             BOOKS
           </Link>
         </li>
         <li>
-          <Link to="Categories" className="categories-link">
+          <Link to="Categories" className="categories-link common-styles">
             CATEGORIES
           </Link>
         </li>
